@@ -32,9 +32,9 @@ document.querySelector('#app').innerHTML = `
   <main>
     <section class="hero section-shell" id="inicio">
       <div class="hero-copy reveal">
-        <p class="eyebrow"><span class="eyebrow-dot"></span> manicure & nail art · são paulo</p>
+        <p class="eyebrow">manicure & nail art · são paulo</p>
         <h1>Suas mãos,<br /><i>uma assinatura.</i></h1>
-        <p class="hero-intro">Um pequeno ritual de pausa, cor e cuidado. Manicures pensadas para acompanhar o seu ritmo — e dizer um pouco sobre você.</p>
+        <p class="hero-intro">Um pequeno ritual de pausa, cor e cuidado. Manicures pensadas para acompanhar o seu ritmo, e dizer um pouco sobre você.</p>
         <div class="hero-actions">
           <a class="button button-dark" href="#agenda">Encontrar meu horário <span aria-hidden="true">↗</span></a>
           <a class="text-link" href="#servicos">Conheça os rituais <span aria-hidden="true">↓</span></a>
@@ -50,8 +50,6 @@ document.querySelector('#app').innerHTML = `
           <img src="${images.hero}" alt="Profissional aplicando esmalte nas unhas de uma cliente" />
           <span class="image-stamp">feito<br /><strong>com</strong><br />calma</span>
         </div>
-        <div class="hero-note"><span>01</span><span>soft power<br />for your hands</span></div>
-        <div class="scribble scribble-hero" aria-hidden="true">✳</div>
       </div>
     </section>
 
@@ -63,7 +61,7 @@ document.querySelector('#app').innerHTML = `
 
     <section class="services section-shell" id="servicos">
       <div class="section-heading reveal">
-        <p class="eyebrow"><span class="eyebrow-dot"></span> escolha o seu momento</p>
+        <p class="eyebrow">escolha o seu momento</p>
         <h2>Rituais feitos<br /><i>sob medida.</i></h2>
         <p>Do básico bem-feito ao detalhe que vira assunto, cada atendimento começa com uma conversa.</p>
       </div>
@@ -87,7 +85,7 @@ document.querySelector('#app').innerHTML = `
 
         <article class="service-card service-card-photo reveal reveal-delay-3">
           <img src="${images.detail}" alt="Detalhe de unhas com esmalte vermelho e acabamento brilhante" loading="lazy" />
-          <div class="service-photo-overlay"><span>03 / 04</span><span>nail art</span></div>
+          <div class="service-photo-overlay"><span>03 / 04</span></div>
         </article>
 
         <article class="service-card service-card-accent reveal reveal-delay-4">
@@ -109,9 +107,9 @@ document.querySelector('#app').innerHTML = `
         <span class="atelier-caption">o gesto<br />antes da cor</span>
       </div>
       <div class="atelier-copy reveal reveal-delay-1">
-        <p class="eyebrow"><span class="eyebrow-dot"></span> o jeito lume</p>
+        <p class="eyebrow">o jeito lume</p>
         <h2>Beleza que<br /><i>não corre.</i></h2>
-        <p class="large-copy">Aqui, o tempo do cuidado importa tanto quanto o resultado. O Lume nasceu para ser uma pausa no meio do dia — daquelas que você sente nas mãos e leva para o resto da semana.</p>
+        <p class="large-copy">Aqui, o tempo do cuidado importa tanto quanto o resultado. O Lume nasceu para ser uma pausa no meio do dia, daquelas que você sente nas mãos e leva para o resto da semana.</p>
         <a class="button button-outline" href="#agenda">Conheça o atelier <span aria-hidden="true">↗</span></a>
         <div class="atelier-facts"><span><b>01</b> atendimento individual</span><span><b>02</b> produtos escolhidos a dedo</span><span><b>03</b> conversa sem pressa</span></div>
       </div>
@@ -119,7 +117,7 @@ document.querySelector('#app').innerHTML = `
 
     <section class="gallery section-shell" aria-labelledby="gallery-title">
       <div class="gallery-heading reveal">
-        <p class="eyebrow"><span class="eyebrow-dot"></span> do nosso caderno</p>
+        <p class="eyebrow">do nosso caderno</p>
         <h2 id="gallery-title">Pequenos<br /><i>detalhes.</i></h2>
         <a class="circle-link" href="#agenda" aria-label="Agendar um horário">↗</a>
       </div>
@@ -141,7 +139,7 @@ document.querySelector('#app').innerHTML = `
 
     <section class="booking section-shell" id="agenda">
       <div class="booking-intro reveal">
-        <p class="eyebrow"><span class="eyebrow-dot"></span> vamos marcar?</p>
+        <p class="eyebrow">vamos marcar?</p>
         <h2>Seu próximo<br /><i>ritual começa aqui.</i></h2>
         <p>Escolha uma data aproximada e a gente responde para confirmar o melhor horário.</p>
         <div class="booking-contact"><span>ou fale direto</span><a href="https://wa.me/5511999999999" target="_blank" rel="noreferrer">WhatsApp <span aria-hidden="true">↗</span></a></div>
