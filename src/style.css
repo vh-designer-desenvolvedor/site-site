@@ -23,6 +23,14 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
+html { scrollbar-color: var(--rose) var(--paper-deep); scrollbar-width: thin; }
+
+::-webkit-scrollbar { width: 12px; height: 12px; }
+::-webkit-scrollbar-track { background: var(--paper-deep); border-left: 1px solid var(--line); }
+::-webkit-scrollbar-thumb { background: var(--rose); border: 3px solid var(--paper-deep); border-radius: 999px; }
+::-webkit-scrollbar-thumb:hover { background: var(--ink); }
+::-webkit-scrollbar-corner { background: var(--paper-deep); }
+
 body { margin: 0; min-width: 320px; overflow-x: hidden; }
 body.menu-open { overflow: hidden; }
 img { display: block; max-width: 100%; }
@@ -44,12 +52,9 @@ button, a { -webkit-tap-highlight-color: transparent; }
   transition: height .35s ease, background-color .35s ease;
 }
 .site-header.is-scrolled { height: 76px; }
-.wordmark { display: inline-flex; align-items: center; gap: 10px; width: fit-content; color: var(--ink); text-decoration: none; font-size: 18px; font-weight: 600; letter-spacing: -.06em; }
-.wordmark em { font: italic 14px var(--serif); letter-spacing: -.03em; }
-.wordmark-mark { width: 27px; height: 27px; border: 1px solid var(--ink); border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; gap: 2px; transform: rotate(-22deg); }
-.wordmark-mark i { width: 3px; height: 12px; display: block; background: var(--rose); border-radius: 50% 50% 45% 45%; }
-.wordmark-mark i:nth-child(2) { height: 16px; background: var(--ink); }
-.wordmark-mark i:nth-child(3) { height: 9px; background: var(--lime); }
+.wordmark { display: inline-flex; align-items: center; gap: 8px; width: fit-content; color: var(--ink); text-decoration: none; font-size: 18px; font-weight: 600; letter-spacing: -.06em; }
+.brand-logo { display: block; width: 52px; height: auto; aspect-ratio: 816 / 951; object-fit: contain; flex-shrink: 0; }
+.brand-name { font: italic 14px var(--serif); letter-spacing: -.03em; }
 .main-nav { display: flex; gap: 28px; justify-self: center; }
 .main-nav a, .header-cta, .footer-links a, .booking-contact a { text-decoration: none; font-size: 12px; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; }
 .main-nav a { color: var(--muted); transition: color .25s ease; }
@@ -174,7 +179,8 @@ h1 i { color: var(--rose); }
 .site-footer { padding-top: 115px; }
 .footer-main { display: grid; grid-template-columns: 1.3fr 1fr .75fr auto; align-items: start; gap: 30px; padding-bottom: 83px; }
 .wordmark-footer { font-size: 22px; }
-.wordmark-footer .wordmark-mark { width: 32px; height: 32px; }
+.wordmark-footer .brand-logo { width: 68px; }
+.wordmark-footer .brand-name { font-size: 16px; }
 .footer-main p { color: var(--muted); font: 17px/1.15 var(--serif); }
 .footer-links { display: grid; gap: 10px; }
 .footer-links a { font-size: 10px; }

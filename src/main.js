@@ -1,6 +1,7 @@
 import './style.css'
 import instagramIcon from './assets/Instagram_Icon.svg'
 import whatsappIcon from './assets/Whatsapp_Icon.svg'
+import lumeLogo from './assets/Lume_Logo.svg'
 
 const images = {
   hero: 'https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=1400&q=88',
@@ -8,11 +9,14 @@ const images = {
   process: 'https://images.unsplash.com/photo-1511803574983-43bf1f387ece?auto=format&fit=crop&w=900&q=85',
 }
 
+const favicon = document.querySelector('#favicon')
+if (favicon) favicon.href = lumeLogo
+
 document.querySelector('#app').innerHTML = `
   <header class="site-header" data-header>
-    <a class="wordmark" href="#inicio" aria-label="Lume Atelier, início">
-      <span class="wordmark-mark" aria-hidden="true"><i></i><i></i><i></i></span>
-      <span>Lume <em>atelier</em></span>
+    <a class="wordmark" href="#inicio" aria-label="Lume manicure, início">
+      <img class="brand-logo" src="${lumeLogo}" alt="" />
+      <span class="brand-name">manicure</span>
     </a>
 
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
@@ -22,7 +26,7 @@ document.querySelector('#app').innerHTML = `
 
     <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
       <a href="#servicos">Serviços <span>01</span></a>
-      <a href="#atelier">O atelier <span>02</span></a>
+      <a href="#atelier">O espaço <span>02</span></a>
       <a href="#agenda">Agendar <span>03</span></a>
     </nav>
 
@@ -53,7 +57,7 @@ document.querySelector('#app').innerHTML = `
       </div>
     </section>
 
-    <div class="ticker" aria-label="Especialidades do atelier">
+    <div class="ticker" aria-label="Especialidades da Lume manicure">
       <div class="ticker-track">
         <span>nail care</span><b>✳</b><span>cor autoral</span><b>✳</b><span>nail art</span><b>✳</b><span>pausa merecida</span><b>✳</b><span>nail care</span><b>✳</b><span>cor autoral</span><b>✳</b><span>nail art</span><b>✳</b><span>pausa merecida</span><b>✳</b>
       </div>
@@ -106,10 +110,10 @@ document.querySelector('#app').innerHTML = `
         <div class="atelier-circle" aria-hidden="true"><span>pausa</span><span>é parte</span><span>do cuidado</span></div>
       </div>
       <div class="atelier-copy reveal reveal-delay-1">
-        <p class="eyebrow">o jeito lume</p>
+        <p class="eyebrow">a essência lume</p>
         <h2>Beleza que<br /><i>não corre.</i></h2>
-        <p class="large-copy">Aqui, o tempo do cuidado importa tanto quanto o resultado. O Lume nasceu para ser uma pausa no meio do dia, daquelas que você sente nas mãos e leva para o resto da semana.</p>
-        <a class="button button-outline" href="#agenda">Conheça o atelier <span aria-hidden="true">↗</span></a>
+        <p class="large-copy">Aqui, o tempo do cuidado importa tanto quanto o resultado. A Lume manicure nasceu para ser uma pausa no meio do dia, daquelas que você sente nas mãos e leva para o resto da semana.</p>
+        <a class="button button-outline" href="#agenda">Conheça o espaço <span aria-hidden="true">↗</span></a>
         <div class="atelier-facts"><span><b>01</b> atendimento individual</span><span><b>02</b> produtos escolhidos a dedo</span><span><b>03</b> conversa sem pressa</span></div>
       </div>
     </section>
@@ -168,18 +172,18 @@ document.querySelector('#app').innerHTML = `
 
   <footer class="site-footer">
     <div class="footer-main section-shell">
-      <a class="wordmark wordmark-footer" href="#inicio" aria-label="Lume Atelier, início">
-        <span class="wordmark-mark" aria-hidden="true"><i></i><i></i><i></i></span>
-        <span>Lume <em>atelier</em></span>
+      <a class="wordmark wordmark-footer" href="#inicio" aria-label="Lume manicure, início">
+        <img class="brand-logo" src="${lumeLogo}" alt="" />
+        <span class="brand-name">manicure</span>
       </a>
       <p>para mãos que contam<br />suas próprias histórias.</p>
-      <div class="footer-links"><a href="#servicos">Serviços</a><a href="#atelier">Atelier</a><a href="#agenda">Agendar</a></div>
+      <div class="footer-links"><a href="#servicos">Serviços</a><a href="#atelier">Espaço</a><a href="#agenda">Agendar</a></div>
       <div class="social-links" aria-label="Redes sociais">
         <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram"><img src="${instagramIcon}" alt="" /></a>
         <a href="https://wa.me/5511999999999" target="_blank" rel="noreferrer" aria-label="WhatsApp"><img src="${whatsappIcon}" alt="" /></a>
       </div>
     </div>
-    <div class="footer-bottom section-shell"><span>© 2026 Lume atelier</span><span>feito com calma, em São Paulo</span><a href="https://unsplash.com" target="_blank" rel="noreferrer">imagens via Unsplash ↗</a></div>
+    <div class="footer-bottom section-shell"><span>© 2026 Lume manicure</span><span>feito com calma, em São Paulo</span><a href="https://unsplash.com" target="_blank" rel="noreferrer">imagens via Unsplash ↗</a></div>
   </footer>
 `
 
