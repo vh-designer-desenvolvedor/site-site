@@ -108,7 +108,8 @@ h1 i { color: var(--rose); }
 .service-card-outline { border: 1px solid var(--ink); border-radius: 62px 3px 3px 3px; }
 .service-card-accent { background: var(--lime); border-radius: 3px 3px 62px 3px; }
 .card-topline, .card-bottomline { display: flex; justify-content: space-between; font: 9px var(--mono); letter-spacing: .08em; text-transform: uppercase; }
-.card-topline span:last-child { margin-right: 12px; }
+.service-card-featured .card-topline span:last-child { margin-right: 12px; }
+.service-card-outline .card-topline span:first-child { transform: translateX(7px); }
 .service-card p { max-width: 200px; margin: 0; color: inherit; opacity: .72; font-size: 12px; line-height: 1.55; }
 .service-card-icon { margin: 38px 0 17px; font: 47px/1 var(--serif); }
 .icon-sun { color: var(--lime); }
@@ -130,7 +131,6 @@ h1 i { color: var(--rose); }
 .atelier-art:hover .atelier-image-wrap img { transform: scale(1.05); }
 .atelier-circle { width: 140px; height: 140px; position: absolute; top: 42%; right: -63px; display: grid; place-content: center; gap: 2px; border: 1px solid var(--ink); border-radius: 50%; background: var(--lime); font: 13px/1.1 var(--serif); text-align: center; transform: rotate(11deg); }
 .atelier-circle span:nth-child(2) { color: var(--rose); }
-.atelier-caption { position: absolute; left: -37px; bottom: 10px; color: var(--muted); font: 9px/1.45 var(--mono); letter-spacing: .06em; text-transform: uppercase; transform: rotate(-90deg); transform-origin: left top; }
 .atelier-copy { max-width: 480px; }
 .atelier-copy .eyebrow { margin-bottom: 25px; }
 .large-copy { margin: 32px 0 29px; color: var(--muted); font-size: 18px; line-height: 1.6; }
@@ -148,10 +148,7 @@ h1 i { color: var(--rose); }
 .gallery-item-tall { border-radius: 90px 4px 4px 4px; }
 .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s ease, opacity .5s ease; }
 .gallery-item:hover img { opacity: .82; transform: scale(1.06); }
-.gallery-item figcaption { position: absolute; right: 17px; bottom: 15px; left: 17px; display: flex; justify-content: space-between; color: var(--white); font: 10px var(--mono); letter-spacing: .05em; text-transform: uppercase; }
-.gallery-item figcaption span { font-size: 16px; }
 .gallery-note { display: flex; flex-direction: column; justify-content: space-between; padding: 19px 19px 23px; background: var(--rose); border-radius: 4px 4px 90px 4px; }
-.note-number { font: 10px var(--mono); }
 .gallery-note p { margin: 0; font: 29px/.97 var(--serif); letter-spacing: -.06em; }
 .gallery-note i { color: var(--lime); }
 
@@ -259,7 +256,6 @@ h1 i { color: var(--rose); }
   .atelier-art { width: calc(100% - 27px); margin-left: 27px; }
   .atelier-image-wrap { height: 410px; border-radius: 4px 42% 4px 42%; }
   .atelier-circle { width: 112px; height: 112px; right: -7px; font-size: 11px; }
-  .atelier-caption { left: -25px; }
   .large-copy { margin: 26px 0; font-size: 16px; }
   .atelier-facts { margin-top: 37px; }
   .gallery { padding-bottom: 100px; }
@@ -269,7 +265,6 @@ h1 i { color: var(--rose); }
   .gallery-item-wide { grid-column: 1 / -1; border-radius: 4px 4px 4px 50px; }
   .gallery-item-tall { grid-column: 1; grid-row: 2; border-radius: 45px 4px 4px 4px; }
   .gallery-note { grid-column: 2; grid-row: 2; border-radius: 4px 4px 50px 4px; padding: 14px; }
-  .gallery-item figcaption { right: 12px; bottom: 10px; left: 12px; font-size: 8px; }
   .gallery-note p { font-size: 23px; }
   .booking { display: flex; flex-direction: column; gap: 52px; padding: 58px 25px 45px; border-radius: 4px 65px 4px 4px; }
   .booking-intro > p:not(.eyebrow) { margin: 23px 0 35px; }

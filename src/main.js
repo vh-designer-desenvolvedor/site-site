@@ -104,7 +104,6 @@ document.querySelector('#app').innerHTML = `
           <img src="${images.process}" alt="Mãos sendo cuidadas durante um atendimento de manicure" loading="lazy" />
         </div>
         <div class="atelier-circle" aria-hidden="true"><span>pausa</span><span>é parte</span><span>do cuidado</span></div>
-        <span class="atelier-caption">o gesto<br />antes da cor</span>
       </div>
       <div class="atelier-copy reveal reveal-delay-1">
         <p class="eyebrow">o jeito lume</p>
@@ -124,14 +123,11 @@ document.querySelector('#app').innerHTML = `
       <div class="gallery-grid">
         <figure class="gallery-item gallery-item-wide reveal reveal-delay-1">
           <img src="${images.detail}" alt="Unhas vermelhas com acabamento brilhante" loading="lazy" />
-          <figcaption>clássico, nunca básico <span>↗</span></figcaption>
         </figure>
         <figure class="gallery-item gallery-item-tall reveal reveal-delay-2">
           <img src="${images.hero}" alt="Atendimento de manicure em detalhe" loading="lazy" />
-          <figcaption>o cuidado está no detalhe <span>↗</span></figcaption>
         </figure>
         <div class="gallery-note reveal reveal-delay-3">
-          <span class="note-number">04</span>
           <p>O esmalte muda.<br /><i>O cuidado fica.</i></p>
         </div>
       </div>
